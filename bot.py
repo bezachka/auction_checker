@@ -15,7 +15,7 @@ load_dotenv(BASE_DIR / "keys.env")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 if not BOT_TOKEN:
-    raise ValueError("BOT_TOKEN не найден в keys.env!")
+    raise ValueError("BOT_TOKEN не найден")
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
